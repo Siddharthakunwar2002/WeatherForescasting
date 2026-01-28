@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,631;1,14..32,631&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-box">
+        <div class="search-button">
+            <input type="text" placeholder="enter a place" required>
+            <button class="icons">
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            </button>
+
+            
+        </div>
+
+        <div class="location-not">
+                <h1>Sorry, Location not found</h1>
+                <img src="./img/404.png" alt="404">;
+        </div>
+
+        <div class="weather-body">
+            <div class="image-box">
+            <div class="image">
+                <img src="./img/clear.png" alt="weather image">
+            </div>
+            
+            <div class="weather-value">
+                <h1 class="temperature-value">15 <sup>°C</sup></h1>
+                <p class="weather-name"> scattered cloud</p>
+            </div>
+            </div>
+            <div class="humidity-box">
+            <div class="humidity-number">
+                <div class="hum-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="num-hum">
+                    <p class="number">33%</p>
+                    <p class="Humidity">Humidity</p>
+                </div>
+                
+            </div>
+            <div class="humidity-number">
+                <div class="hum-icon">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="num-hum">
+                    <p class="wind-speed" >2.01Km/H</p>
+                <p class="Humidity">Wind Speed</p>
+                </div>
+                
+            </div>
+        </div>
+        
+
+            
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
